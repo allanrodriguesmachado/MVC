@@ -1,25 +1,11 @@
 <?php
+ob_start();
 
-require __DIR__ . '/vendor/autoload.php';
+session_start();
 
+require __DIR__ . "/vendor/autoload.php";
 
-use \App\Controller\Pages\Home;
-
-$obRequest = new \App\Http\Request();
-echo "<pre>";
-print_r($obRequest);
-echo "<pre>"; exit;
+echo "Agora Esta indo tudo certo";
 
 
-
-exit;
-
-echo Home::getHome();
-
-
-
-
-
-//         echo "<pre>";
-//         print_r($vars);
-//        echo "<pre>"; exit;
+ob_end_flush();

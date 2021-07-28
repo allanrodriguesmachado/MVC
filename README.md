@@ -1,5 +1,1 @@
-# Project MVC
-
-- Model
-- View
-- Controller
+# Project Login
